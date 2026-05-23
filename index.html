@@ -1,50 +1,51 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Trang Web với Taskbar</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <div id="taskbar" class="taskbar">
-            <div><img class="logo" src="src\server-icon.png"></div>
-            <a></a>
-            <button class="nav-btn" onclick="showContent(1)">Minecraft</button>
-            <button class="nav-btn" onclick="showContent(2)">Discord</button>
-            <button class="nav-btn" onclick="showContent(3)">Nút</button>
-            <button class="nav-btn" onclick="showContent(4)">Nút</button>
-            <button id="toggle-taskbar-btn" class="toggle-btn" class="hide-btn" onclick="toggleTaskbar()">
-                <img src="src\left-button.png" style="height:5dvh">
-            </button>
-        </div>
-        <div class="content">
-            <div id="content1" class="content-item">
-                <div class="content1-ip1">
-                    <button class="copy-button" onclick="copyText()">
-                        <img src="src\coppy-button.png" class="coppy-button">
-                    </button>
-
-                </div>
-            </div>
-            <div id="content2" class="content-item" style="display: none;">
-                Nội dung 2
-            </div>
-            <div id="content3" class="content-item" style="display: none;">
-                Nội dung 3
-            </div>
-            <div id="content4" class="content-item" style="display: none;">
-                Nội dung 4
-            </div>
-        </div>
-        <button id="show-taskbar-btn" class="show-btn" onclick="toggleTaskbar()" style="display: none;">
-            <img class="show-btn" src="src\right-button.png">
+      <div id="taskbar" class="taskbar">
+        <div><img class="logo" src="src\server-icon.png" /></div>
+        <a></a>
+        <button class="nav-btn" onclick="showContent(1)">Minecraft</button>
+        <button class="nav-btn" onclick="showContent(2)">Discord</button>
+        <button class="nav-btn" onclick="showContent(3)">Nút</button>
+        <button class="nav-btn" onclick="showContent(4)">Nút</button>
+        <button
+          id="toggle-taskbar-btn"
+          class="toggle-btn"
+          class="hide-btn"
+          onclick="toggleTaskbar()"
+        >
+          <img src="src\left-button.png" style="height: 5dvh" />
         </button>
+      </div>
+      <div class="content">
+        <div id="content1" class="content-item">
+          <div class="content1-ip1">
+            <button class="copy-button" onclick="copyText()">
+              <img src="src\coppy-button.png" class="coppy-button" />
+            </button>
+          </div>
+        </div>
+        <div id="content2" class="content-item" style="display: none">Nội dung 2</div>
+        <div id="content3" class="content-item" style="display: none">Nội dung 3</div>
+        <div id="content4" class="content-item" style="display: none">Nội dung 4</div>
+      </div>
+      <button
+        id="show-taskbar-btn"
+        class="show-btn"
+        onclick="toggleTaskbar()"
+        style="display: none"
+      >
+        <img class="show-btn" src="src\right-button.png" />
+      </button>
     </div>
     <script src="scripts.js"></script>
-</body>
-
+  </body>
 </html>
