@@ -1,0 +1,14 @@
+*
+
+!.gitignore
+!LICENSE
+!.prettierrc
+!package.json
+!README.md
+
+!index.html
+!scripts.js
+!styles.css
+
+!src/
+!src/*
