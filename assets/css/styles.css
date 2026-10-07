@@ -110,7 +110,7 @@ body {
   margin-left: 30dvh;
   flex: 1;
   padding: 3dvh;
-  transition: margin-left 0.3s ease; /* Smooth transition for margin change */
+  transition: margin-left 0.3s ease;
   display: flex;
   flex-direction: column;
 }

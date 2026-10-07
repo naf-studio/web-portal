@@ -75,7 +75,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-// Expose functions globally for inline HTML event handlers
 window.showContent = showContent;
 window.toggleTaskbar = toggleTaskbar;
 window.copyText = copyText;

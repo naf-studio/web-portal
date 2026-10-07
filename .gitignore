@@ -1,21 +1,16 @@
-# Dependencies
 node_modules/
 
-# Production build & cache
 dist/
 build/
 .cache/
 
-# Logs & debugging
 logs/
 *.log
 npm-debug.log*
 
-# Environment & local secrets
 .env
 *.env.local
 
-# OS & Editor artifacts
 .DS_Store
 Thumbs.db
 .vscode/
