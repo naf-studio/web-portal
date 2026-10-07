@@ -3,49 +3,55 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Trang Web với Taskbar</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>NAF Studio - Community Portal</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
 
   <body>
     <div class="container">
       <div id="taskbar" class="taskbar">
-        <div><img class="logo" src="src\server-icon.png" /></div>
+        <div>
+          <img class="logo" src="assets/images/server-icon.png" alt="Server Icon" />
+        </div>
         <a></a>
         <button class="nav-btn" onclick="showContent(1)">Minecraft</button>
         <button class="nav-btn" onclick="showContent(2)">Discord</button>
-        <button class="nav-btn" onclick="showContent(3)">Nút</button>
-        <button class="nav-btn" onclick="showContent(4)">Nút</button>
+        <button class="nav-btn" onclick="showContent(3)">About</button>
+        <button class="nav-btn" onclick="showContent(4)">Links</button>
         <button
           id="toggle-taskbar-btn"
-          class="toggle-btn"
-          class="hide-btn"
+          class="toggle-btn hide-btn"
           onclick="toggleTaskbar()"
+          aria-label="Toggle Navigation"
         >
-          <img src="src\left-button.png" style="height: 5dvh" />
+          <img src="assets/images/left-button.png" alt="Collapse Menu" style="height: 5dvh" />
         </button>
       </div>
+
       <div class="content">
         <div id="content1" class="content-item">
           <div class="content1-ip1">
-            <button class="copy-button" onclick="copyText()">
-              <img src="src\coppy-button.png" class="coppy-button" />
+            <button class="copy-button" onclick="copyText('naf.com')" aria-label="Copy Server IP">
+              <img src="assets/images/copy-button.png" class="coppy-button" alt="Copy Address" />
             </button>
           </div>
         </div>
-        <div id="content2" class="content-item" style="display: none">Nội dung 2</div>
-        <div id="content3" class="content-item" style="display: none">Nội dung 3</div>
-        <div id="content4" class="content-item" style="display: none">Nội dung 4</div>
+        <div id="content2" class="content-item" style="display: none">Discord Community</div>
+        <div id="content3" class="content-item" style="display: none">About NAF Studio</div>
+        <div id="content4" class="content-item" style="display: none">Community Resources</div>
       </div>
+
       <button
         id="show-taskbar-btn"
         class="show-btn"
         onclick="toggleTaskbar()"
         style="display: none"
+        aria-label="Expand Navigation"
       >
-        <img class="show-btn" src="src\right-button.png" />
+        <img class="show-btn" src="assets/images/right-button.png" alt="Expand Menu" />
       </button>
     </div>
-    <script src="scripts.js"></script>
+
+    <script src="assets/js/scripts.js"></script>
   </body>
 </html>
