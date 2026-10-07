@@ -39,6 +39,7 @@ web-portal/
 ```
 
 ### Key Technical Aspects
+
 - **Separation of Concerns**: Markup (`index.html`), presentation styles (`assets/css/styles.css`), and dynamic behaviors (`assets/js/scripts.js`) maintain clean architectural boundaries.
 - **Modern Clipboard Interaction**: Asynchronous clipboard copying via `navigator.clipboard.writeText()` coupled with legacy input fallback for older browsers.
 - **Static Assets**: Consolidated static resources under `assets/images/` with standardized lowercase naming.
@@ -51,6 +52,7 @@ web-portal/
 Because the portal is built with vanilla HTML, CSS, and JavaScript, no build step or bundler is required.
 
 ### Local Server Preview
+
 You can preview the portal locally using any lightweight static server:
 
 ```bash
@@ -60,6 +62,7 @@ npx serve .
 # Option B: Using Python's built-in HTTP server
 python -m http.server 8000
 ```
+
 Then navigate to `http://localhost:8000` (or the URL displayed in your terminal) in any web browser.
 
 ---
