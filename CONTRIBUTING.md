@@ -1,6 +1,6 @@
 # Contributing to Web Portal
 
-Thank you for your interest in contributing to the **web-portal** project at NAF Studio. This document outlines our engineering standards, contribution workflow, and static web architectural conventions.
+Thank you for your interest in contributing to the web-portal project at NAF Studio. This document outlines our engineering standards, contribution workflow, and static web architectural conventions.
 
 ---
 
@@ -29,15 +29,13 @@ All commit messages must adhere to the Conventional Commits specification:
 <type>(<scope>): <short description in lowercase>
 ```
 
-- **Allowed Types**: `feat`, `fix`, `docs`, `style`, `refactor`, `perf`, `test`, `build`, `ci`, `chore`.
-- **Optional Scope**: Component or asset name (e.g., `navigation`, `clipboard`, `styles`, `assets`).
-- **Description**: Concise imperative sentence in lowercase without trailing punctuation.
-  - _Compliant_: `feat(clipboard): support modern navigator clipboard api`
-  - _Non-compliant_: `Updated styles`, `fixed bug.`
+- Allowed Types: `feat`, `fix`, `docs`, `style`, `refactor`, `perf`, `test`, `build`, `ci`, `chore`.
+- Optional Scope: Component or asset name (e.g., `navigation`, `clipboard`, `styles`, `assets`).
+- Description: Concise imperative sentence in lowercase without trailing punctuation.
 
 ### 2.2. Atomic Commits
 
-- Each commit must address a **single logical concern**.
+- Each commit must address a single logical concern.
 - Never mix formatting changes, asset additions, and functional JavaScript logic within the same commit.
 - Every commit must leave the project in a working state.
 
@@ -47,9 +45,9 @@ All commit messages must adhere to the Conventional Commits specification:
 
 ### 3.1. Tooling & Verification Pipeline
 
-- Package Manager: **`npm`**.
-- Linter: **`eslint`** (configured via `eslint.config.mjs`).
-- Formatter: **`prettier`** (configured via `.prettierrc`).
+- Package Manager: `npm`.
+- Linter: `eslint` (configured via `eslint.config.mjs`).
+- Formatter: `prettier` (configured via `.prettierrc`).
 - Run static checks prior to committing:
   ```bash
   npm run lint
@@ -58,8 +56,8 @@ All commit messages must adhere to the Conventional Commits specification:
 
 ### 3.2. Comment Hygiene & JSDoc
 
-- **Core Principle**: Write clean, self-documenting code. **Avoid trivial line-by-line comments** (e.g., `// hide element`, `// return value`).
-- **JSDoc Standards**: Required for all JavaScript utility functions and event handlers:
+- Write clean, self-documenting code. Avoid trivial line-by-line comments (e.g., `// hide element`, `// return value`).
+- JSDoc Standards is required for all JavaScript utility functions and event handlers:
   - Concise imperative summary in the first line.
   - Explicit `@param` and `@returns` type annotations.
 
@@ -67,9 +65,9 @@ All commit messages must adhere to the Conventional Commits specification:
 
 ## 4. Static Web Architecture & Clean Code Principles
 
-- **Separation of Concerns**: Keep HTML markup (`index.html`), stylesheet rules (`assets/css/styles.css`), and client behaviors (`assets/js/scripts.js`) strictly separated.
-- **Asset Organization**: Store static media inside `assets/images/` using clear, hyphenated lowercase filenames (`copy-button.png`, `server-icon.png`).
-- **Cross-Browser & Device Resilience**: Ensure responsive layouts function across desktop and mobile viewports, using resilient fallback implementations (e.g., `navigator.clipboard` with legacy fallback).
+- Keep HTML markup (`index.html`), stylesheet rules (`assets/css/styles.css`), and client behaviors (`assets/js/scripts.js`) strictly separated.
+- Store static media inside `assets/images/` using clear, hyphenated lowercase filenames (`copy-button.png`, `server-icon.png`).
+- Ensure responsive layouts function across desktop and mobile viewports, using resilient fallback implementations (e.g., `navigator.clipboard` with legacy fallback).
 
 ---
 
