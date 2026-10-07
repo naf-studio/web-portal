@@ -1,0 +1,31 @@
+name: 'Bug Report'
+description: 'Report a styling bug, broken link, or script error in the web portal'
+labels: ['bug']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting an issue! Please describe the problem below.
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug Description
+      description: A clear and concise description of the issue.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to Reproduce
+      description: What device, browser, or screen resolution were you using?
+      placeholder: |
+        1. Open index.html
+        2. Click '...'
+        3. See error
+    validations:
+      required: true
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: Screenshots or Console Output
+      description: Attach screenshots or browser console error logs if applicable.

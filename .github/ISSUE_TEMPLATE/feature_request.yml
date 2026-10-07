@@ -1,0 +1,22 @@
+name: 'Feature Request'
+description: 'Suggest a UI improvement or new section for the web portal'
+labels: ['enhancement']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Suggest an idea to improve the NAF Studio web portal interface.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem Statement
+      description: What challenge or missing capability does this address?
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed Solution
+      description: Describe the design or functionality you would like to see.
+    validations:
+      required: true
