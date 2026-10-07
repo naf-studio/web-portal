@@ -1,14 +1,24 @@
-*
+# Dependencies
+node_modules/
 
-!.gitignore
-!LICENSE
-!.prettierrc
-!package.json
-!README.md
+# Production build & cache
+dist/
+build/
+.cache/
 
-!index.html
-!scripts.js
-!styles.css
+# Logs & debugging
+logs/
+*.log
+npm-debug.log*
 
-!src/
-!src/*
+# Environment & local secrets
+.env
+*.env.local
+
+# OS & Editor artifacts
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*~

@@ -1,4 +1,14 @@
 {
+  "name": "web-portal",
+  "version": "1.0.0",
+  "description": "Official community web portal and landing page for NAF Studio.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
   "devDependencies": {
     "eslint": "^10.4.0",
     "eslint-config-prettier": "^10.1.8",
